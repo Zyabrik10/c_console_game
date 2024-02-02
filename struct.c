@@ -1,13 +1,24 @@
 typedef struct Player
 {
-    bool hasPlayerStartedGame;
-    char *nickname;
-    int health;
+    char *name;
+    float health;
     float power;
     float def;
+    float defChance;
     float critChance;
     float critPower;
-    int level;
+    int game_level;
+    int player_level;
 } Player;
 
-static Player player;
+typedef struct Enemy
+{
+    char *name;
+    float health;
+    float power;
+    float def;
+    float defChance;
+    float critChance;
+    float critPower;
+    int enemy_level;
+} Enemy;

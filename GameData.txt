@@ -1,0 +1,9 @@
+name Alex
+health 1150.000000
+power 23.000000
+def 11.000000
+defChance 0.220000
+critChance 0.420000
+critPowers 3.300000
+player_level 22
+game_level 4
