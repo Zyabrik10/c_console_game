@@ -21,3 +21,31 @@ As he approached her, the princess's eyes widened with a mixture of fear and rel
 Princess Isabella, touched by his bravery and unwavering devotion, embraced Sir Lancelot tightly. Together, they ventured back through the treacherous lair, emerging into the light of day, where the people of Avaloria greeted them with cheers, joyously celebrating the safe return of their princess.
 
 And so, Sir Lancelot, the joyful and valiant knight, fulfilled his noble duty, rescuing the princess and restoring peace to the kingdom. His tale of bravery and kindness would forever be recounted throughout the realm, a testament to the power of courage and the triumph of good over evil.
+
+☈ʂɬཞąŋɠɛཞ☬ɬɧıŋɠʂ♃, [23.01.2024 22:24]
+As the knight entered the Cry Forest, the air turned chilly and the trees loomed over him like silent sentinels. Suddenly, he heard a high-pitched scream coming from the depths of the forest.
+"Help! Help!" cried a voice in distress.
+Rushing towards the sound, he stumbled upon a small clearing where a group of fairies were trapped in a tangle of vines and thorns. Their delicate wings fluttered frantically as they struggled to free themselves.
+"Let us free! Please!" they wailed.
+
+The knight unsheathed his sword and began hacking through the vines, releasing the fairies one by one. As they flew joyously around him, their laughter echoed through the forest like tinkling bells.
+
+In the heart of the forest, he encountered a pack of werewolves, their mournful howls reverberating through the trees. With a swift and precise battle, the knight fought off the creatures, their pained moans fading into the distance.
+
+Deeper into the forest, he finally faced the boss—a massive, slobbering creature with glowing eyes and razor-sharp claws. With a battle cry, the knight charged, and the forest filled with the clanging of swords and the beast's thunderous roars.
+As the knight emerged victorious, the Cry Forest fell silent, enveloping him in a hushed, eerie hum. He knew the Dragon awaited him, and the princess's fate depended on his valor.
+
+☈ʂɬཞąŋɠɛཞ☬ɬɧıŋɠʂ♃, [23.01.2024 22:26]
+Through the twisted, gnarled trees of the Cry Forest, the knight forged ahead, the eerie silence broken only by the distant howls of unseen creatures.
+Suddenly, a group of goblins ambushed him, their sinister chuckles echoing through the trees. With swift slashes of his sword, he fended off their attacks, his breath coming in sharp gasps.
+"Is that all you've got, you filthy creatures?" the knight taunted as he defeated the goblins, their moans of defeat fading into the dense underbrush.
+
+Further into the forest, the knight stumbled upon the third challenge—a massive, slithering serpent.
+
+Its hisses and rattles filled the air as it coiled and lunged, but the knight's blade flashed like lightning as he fought back.
+"Take that, you scaly beast!" the knight shouted triumphantly as he vanquished the serpent, its death throes a symphony of echoing hisses.
+
+Finally, the knight reached the heart of the Cry Forest, where the earth trembled with the approach of the legendary Cry Dragon. Its deafening roar pierced the air, making the very ground shake.
+
+Clenching his sword, the knight yelled, "Face me, foul creature! I will not falter in my quest to save the princess!"
+The dragon's thunderous roar was the only reply, as the two adversaries prepared to battle for the ultimate prize.

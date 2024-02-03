@@ -1,9 +1,9 @@
 name Alex
-health 1150.000000
-power 23.000000
-def 11.000000
-defChance 0.220000
-critChance 0.420000
-critPowers 3.300000
-player_level 22
-game_level 4
+health 100.000000
+power 2.000000
+def 0.500000
+defChance 0.100000
+critChance 0.200000
+critPowers 1.100000
+player_level 1
+game_level 1

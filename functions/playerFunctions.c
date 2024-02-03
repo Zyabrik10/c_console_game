@@ -88,10 +88,12 @@ void setPlayerName(char *name)
     player.name = name;
 }
 
-void increasePlayerLevel(int levelPlus){
-    player.player_level += levelPlus;
+void increasePlayerLevel(int levelPlus)
+{
+    printf("\n--- Your level increased to %d ---\n\n", player.player_level + levelPlus);
+    player.player_level += levelPlus * 100;
     player.health = 100 * (player.player_level + 1) * 0.5;
-    player.power = 2 * (player.player_level+ 1) * .5;
+    player.power = 2 * (player.player_level + 1) * .5;
     player.def = player.player_level * .5;
     player.defChance = player.player_level * .01;
     player.critChance = .2 + (player.player_level * .01);
@@ -99,7 +101,8 @@ void increasePlayerLevel(int levelPlus){
     saveGameData();
 }
 
-void resetPlayerValues(){
+void resetPlayerValues()
+{
     player.game_level = 1;
     player.player_level = 1;
     player.health = 100;
@@ -124,45 +127,52 @@ void setDefaultPlayerValues()
     player.name = "Zyabrik10";
 }
 
-void exitGame(){
+void exitGame()
+{
     saveGameData();
     exit(0);
 }
 
-void printMenu(){
-    printf("Exit - 1\n");
-    printf("Player statistics - 2\n");
-    printf("Start game on level %d - 3\n", player.game_level);
+void printMenu()
+{
+    printf(" Exit - 1\n");
+    printf(" Player statistics - 2\n");
+    printf(" Start game on level %d - 3\n", player.game_level);
 }
 
-int scanPlayerInput(){
+int scanPlayerInput()
+{
     char a;
 
-    printf("\r> ");
+    printf("\r > ");
     scanf("%c", &a);
     return (int)a - 48;
 }
 
-void askAboutMenu(){
+void askAboutMenu()
+{
     int comand;
     printMenu();
 
-    while(1){
+    while (1)
+    {
         comand = scanPlayerInput();
 
-        switch(comand){
-            case 1:
-                exitGame();
-                return;
-            case 2:
-                printAllPlayerValues();
-                break;
-            case 3:
-                return;
+        switch (comand)
+        {
+        case 1:
+            exitGame();
+            return;
+        case 2:
+            printAllPlayerValues();
+            break;
+        case 3:
+            return;
         }
     }
 }
 
-void restorePlayerHealth(){
- player.health = 100 * (player.player_level * .5);   
+void restorePlayerHealth()
+{
+    player.health = 100 * (player.player_level * .5);
 }
