@@ -10,7 +10,6 @@
 #include "./fight.c"
 #include "./levels/levels.c"
 
-int setPlayerGameName();
 void printHistory();
 void initGame();
 
@@ -44,46 +43,37 @@ void main()
 
     if (player.game_level >= 4)
     {
-        printf("\n You have complited this story\n");
-        resetPlayerValues();
+        printf("\n You have complited this story (Press enter)\n");
+        makePause();
+        exitGame();
         return;
-    }
-}
-
-int setPlayerGameName()
-{
-    while (1)
-    {
-        printf("\n ------------------------------------------");
-        printf("\n Please choose your name (up to 10 letters): ");
-        scanf("%s", name);
-        printf(" ------------------------------------------\n");
-
-        if (strlen(name) >= 10)
-        {
-            printf("\n Your name can`t consists of more than 10 letters\n\n");
-            continue;
-        }
-
-        setPlayerName(name);
-        break;
     }
 }
 
 void printHistory()
 {
-    printf("\n Once upon a time, in the magnificent kingdom of Eldoria, there lived a brave and joyful knight known as Sir %s Lancelot.\n He was revered by all and had always been eager to embark on daring quests to protect the realm from any danger that threatened its peace and harmony. (Press enter)\n", player.name);
+    // ----------------------------------------------------------------
+    printf("\n Once upon a time, in the magnificent kingdom of Eldoria, there lived a brave and joyful knight known as Sir %s Lancelot. (Press enter)\n", player.name);
     char a;
     scanf("%c", &a);
     scanf("%c", &a);
     // ----------------------------------------------------------------
-    printf(" One fateful day, as the sun shone brightly over Eldoria, news spread like wildfire that the beloved princess, Princess Isabella, had been kidnapped by a fearsome dragon known as Drakon.\n The entire kingdom mourned her disappearance, as she was not only beautiful but kind-hearted and loved by all. (Press enter)\n");
+    printf(" He was revered by all and had always been eager to embark on daring quests to protect the realm from any danger that threatened its peace and harmony. (Press enter)\n", player.name);
     makePause();
     // ----------------------------------------------------------------
-    printf(" Sir %s Lancelot, fueled by a newfound determination, quickly mounted his trusted steed, Thunderbolt, and set off on an epic journey to rescue the princess from the clutches of the menacing dragon.\n  Along his path, he encountered numerous challenges and obstacles, but his unwavering belief in bravery and justice propelled him forward. (Press enter)\n", player.name);
+    printf(" One fateful day, as the sun shone brightly over Eldoria, news spread like wildfire that the beloved princess, Princess Isabella, had been kidnapped by a fearsome dragon known as Drakon. (Press enter)\n");
     makePause();
     // ----------------------------------------------------------------
-    printf(" You will have to go through three stages before you get to the Dragon: The Cry Forest, The Desiers Field, The Dragon Island (Press enter)\n", player.name);
+    printf(" The entire kingdom mourned her disappearance, as she was not only beautiful but kind-hearted and loved by all. (Press enter)\n");
+    makePause();
+    // ----------------------------------------------------------------
+    printf(" Sir %s Lancelot, fueled by a newfound determination, quickly mounted his trusted steed, Thunderbolt, and set off on an epic journey to rescue the princess from the clutches of the menacing dragon. (Press enter)\n", player.name);
+    makePause();
+    // ----------------------------------------------------------------
+    printf(" Along his path, he encountered numerous challenges and obstacles, but his unwavering belief in bravery and justice propelled him forward. (Press enter)\n", player.name);
+    makePause();
+    // ----------------------------------------------------------------
+    printf(" You will have to go through three stages before you get to the Drakon: The Cry Forest, The Desiers Field, The Dragon Island (Press enter)\n", player.name);
     makePause();
 }
 

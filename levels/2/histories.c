@@ -9,10 +9,8 @@ void print_level_2_history_1()
 
 void print_level_2_history_2_start()
 {
-    printf(" The first opponent that crossed his path was the Scorchclaw Basilisk, a reptilian behemoth whose scales radiated intense heat. (Press enter)\n");
-    char a;
-    scanf("%c", &a);
-    scanf("%c", &a);
+    printf("\n The first opponent that crossed his path was the Scorchclaw Basilisk, a reptilian behemoth whose scales radiated intense heat. (Press enter)\n");
+    makePause();
     printf(" With the ability to breathe searing flames, the basilisk sought to defend its territory fiercely. (Press enter)\n");
     makePause();
 }

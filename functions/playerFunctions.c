@@ -90,8 +90,8 @@ void setPlayerName(char *name)
 
 void increasePlayerLevel(int levelPlus)
 {
-    printf("\n--- Your level increased to %d ---\n\n", player.player_level + levelPlus);
-    player.player_level += levelPlus * 100;
+    printf("\n--- Your level increased to %d ---\n", player.player_level + levelPlus);
+    player.player_level += levelPlus;
     player.health = 100 * (player.player_level + 1) * 0.5;
     player.power = 2 * (player.player_level + 1) * .5;
     player.def = player.player_level * .5;
@@ -175,4 +175,24 @@ void askAboutMenu()
 void restorePlayerHealth()
 {
     player.health = 100 * (player.player_level * .5);
+}
+
+int setPlayerGameName()
+{
+    while (1)
+    {
+        printf("\n ------------------------------------------");
+        printf("\n Please choose your name (up to 10 letters): ");
+        scanf("%s", name);
+        printf(" ------------------------------------------\n");
+
+        if (strlen(name) >= 10)
+        {
+            printf("\n Your name can`t consist of more than 10 letters\n\n");
+            continue;
+        }
+
+        setPlayerName(name);
+        break;
+    }
 }

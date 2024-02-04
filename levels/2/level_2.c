@@ -6,21 +6,21 @@ void level_2_bossFighting()
 {
     while (1)
     {
-        Enemy basilisk = createEnemy("Basilisk", 10);
-        Enemy harpiis = createEnemy("Harpiis", 15);
-        Enemy sorcerer = createEnemy("Sorcerer", 20);
+        Enemy basilisk = createEnemy("Basilisk", 7);
+        Enemy harpiis = createEnemy("Harpiis", 10);
+        Enemy sorcerer = createEnemy("Sorcerer", 13);
 
         Enemy boss = createEnemy("The Abyssal Sandstorm Leviathan", 30);
         Enemy enemies[] = {basilisk, harpiis, sorcerer};
 
-        bool hasWon = enconterEnemy(&boss, false);
+        bool hasWon = encounterEnemy(&boss, false);
 
         int enemiesNumber = 5;
 
         if (hasWon)
         {
             drawWon();
-            increasePlayerLevel(2);
+            increasePlayerLevel(10);
             return;
         }
 
@@ -33,9 +33,9 @@ void level_2_bossFighting()
 
 void level_2()
 {
-    Enemy basilisk = createEnemy("Basilisk", 10);
-    Enemy harpiis = createEnemy("Harpiis", 15);
-    Enemy sorcerer = createEnemy("sorcerer", 20);
+    Enemy basilisk = createEnemy("Basilisk", 7);
+    Enemy harpiis = createEnemy("Harpiis", 10);
+    Enemy sorcerer = createEnemy("Sorcerer", 13);
 
     Enemy enemies_level_2_history_2[] = {basilisk};
     Enemy enemies_level_2_history_3[] = {harpiis};

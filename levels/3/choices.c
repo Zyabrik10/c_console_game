@@ -36,7 +36,7 @@ void make_choice_level_3_history_1()
             scanf("%c", &a);
             return;
         case 2:
-            printf("\n They are dead becouse of YOU! (Press enter)\n");
+            printf("\n They are dead because of YOU! (Press enter)\n");
             scanf("%c", &a);
             scanf("%c", &a);
             return;
@@ -82,10 +82,10 @@ void make_choice_level_3_history_2()
             printf("\n Drawing upon his mastery of both sword and magic, the knight shattered the dark enchantments, liberating the Crystal Wyrm Sentries from Drakon' s control. (Press enter)\n");
             scanf("%c", &a);
             scanf("%c", &a);
-            increasePlayerLevel(10);
+            increasePlayerLevel(20);
             return;
         case 2:
-            printf("\n They are dead becouse of YOU! (Press enter)\n");
+            printf("\n They are dead because of YOU! (Press enter)\n");
             scanf("%c", &a);
             scanf("%c", &a);
             return;
@@ -130,7 +130,7 @@ void make_choice_level_3_history_3()
         {
         case 1:
             printf("\n %s, recognizing the creature's plight, offered his assistance.\n With a combination of his sword skills and knowledge of ancient spells, the knight lifted the curse that gripped the Frost Whisperer.\n In gratitude, the creature summoned a gentle snowfall that revitalized the glade, transforming it into a winter wonderland. (Press enter)\n", player.name);
-            increasePlayerLevel(1);
+            increasePlayerLevel(20);
             scanf("%c", &a);
             scanf("%c", &a);
             return;

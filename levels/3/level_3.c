@@ -10,17 +10,17 @@ void level_3_bossFighting()
         Enemy goblin = createEnemy("Goblin", 2);
         Enemy serpent = createEnemy("Serpent", 3);
 
-        Enemy basilisk = createEnemy("Basilisk", 10);
-        Enemy harpiis = createEnemy("Harpiis", 15);
-        Enemy sorcerer = createEnemy("sorcerer", 20);
+        Enemy basilisk = createEnemy("Basilisk", 7);
+        Enemy harpiis = createEnemy("Harpiis", 10);
+        Enemy sorcerer = createEnemy("Sorcerer", 13);
 
-        Enemy draconicGuard = createEnemy("the Molten Drake Sentinel", 50);
-        Enemy the_Inferno_Scale_Colossus = createEnemy("the Inferno Scale Colossus", 75);
+        Enemy draconicGuard = createEnemy("the Molten Drake Sentinel", 40);
+        Enemy the_Inferno_Scale_Colossus = createEnemy("the Inferno Scale Colossus", 45);
 
         Enemy boss = createEnemy("The Drakon", 100);
         Enemy enemies[] = {wareWolf, goblin, serpent, basilisk, harpiis, sorcerer, draconicGuard, the_Inferno_Scale_Colossus};
 
-        bool hasWon = enconterEnemy(&boss, false);
+        bool hasWon = encounterEnemy(&boss, false);
 
         int enemiesNumber = 10;
 
@@ -35,16 +35,14 @@ void level_3_bossFighting()
 
         restorePlayerHealth();
         fighEnemies(enemies, 8, enemiesNumber);
+        restorePlayerHealth();
     }
 }
 
 void level_3()
 {
-    Enemy draconicGuard = createEnemy("the Molten Drake Sentinel", 50);
-    Enemy the_Inferno_Scale_Colossus = createEnemy("the Inferno Scale Colossus", 75);
-
-    Enemy enemies_level_3_history_2[] = {draconicGuard};
-    Enemy enemies_level_3_history_3[] = {the_Inferno_Scale_Colossus};
+    Enemy draconicGuard = createEnemy("the Molten Drake Sentinel", 40);
+    Enemy the_Inferno_Scale_Colossus = createEnemy("the Inferno Scale Colossus", 45);
 
     print_level_3_history_1();
 
@@ -53,7 +51,7 @@ void level_3()
 
     print_level_3_history_2_start();
     drawDragon3();
-    fighEnemies(enemies_level_3_history_2, 1, 1);
+    encounterEnemy(&draconicGuard, false);
     print_level_3_history_2_end();
 
     print_level_3_choice_2();
@@ -61,7 +59,7 @@ void level_3()
 
     print_level_3_history_3_start();
     drawDragon3();
-    fighEnemies(enemies_level_3_history_3, 1, 1);
+    encounterEnemy(&the_Inferno_Scale_Colossus, false);
     print_level_3_history_3_end();
 
     print_level_3_history_5_start();

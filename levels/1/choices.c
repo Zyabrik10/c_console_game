@@ -41,7 +41,7 @@ void make_choice_level_1_history_1()
             scanf("%c", &a);
             return;
         case 2:
-            printf("\n They are dead becouse of YOU! (Press enter)\n");
+            printf("\n They are dead because of YOU! (Press enter)\n");
             scanf("%c", &a);
             scanf("%c", &a);
             return;
@@ -53,9 +53,7 @@ void print_level_1_choice_2()
 {
     // ----------------------------------------------------------------
     printf("\n As %s ventured deeper into the heart of the forest, he stumbled upon a clearing where peculiar creatures, ethereal and delicate, awaited his arrival. (Press enter)\n", player.name);
-    char a;
-    scanf("%c", &a);
-    scanf("%c", &a);
+    makePause();
     // ----------------------------------------------------------------
     printf(" These mystical beings, known as the Luminescent Sylvans, were guardians of the Cry Forest, and their radiance flickered with an otherworldly glow. (Press enter)\n");
     makePause();
@@ -88,13 +86,17 @@ void make_choice_level_1_history_2()
         switch (comand)
         {
         case 1:
-            printf("\n Bound by his noble code and an innate sense of duty, %s pledged to aid the Luminescent Sylvans in their time of need.\n The creatures, with gratitude reflected in their luminescent eyes, guided the knight through the mystical labyrinth of the Cry Forest.\n Along the way, they encountered treacherous terrains and faced ethereal challenges that tested %s resolve. (Press enter)\n", player.name, player.name);
-            increasePlayerLevel(3);
+            printf("\n Bound by his noble code and an innate sense of duty, %s pledged to aid the Luminescent Sylvans in their time of need. (Press enter)\n", player.name);
             scanf("%c", &a);
             scanf("%c", &a);
+            printf(" The creatures, with gratitude reflected in their luminescent eyes, guided the knight through the mystical labyrinth of the Cry Forest. (Press enter)\n");
+            makePause();
+            printf(" Along the way, they encountered treacherous terrains and faced ethereal challenges that tested %s resolve. (Press enter)\n", player.name);
+            makePause();
+            increasePlayerLevel(2);
             return;
         case 2:
-            printf("\n They are dead becouse of YOU! (Press enter)\n");
+            printf("\n They are dead because of YOU! (Press enter)\n");
             scanf("%c", &a);
             scanf("%c", &a);
             return;
@@ -138,10 +140,14 @@ void make_choice_level_1_history_3()
         switch (comand)
         {
         case 1:
-            printf("\n %s, recognizing the creature's plight, offered his assistance.\n With a combination of his sword skills and knowledge of ancient spells, the knight lifted the curse that gripped the Frost Whisperer.\n In gratitude, the creature summoned a gentle snowfall that revitalized the glade, transforming it into a winter wonderland. (Press enter)\n", player.name);
-            increasePlayerLevel(1);
+            printf("\n %s, recognizing the creature's plight, offered his assistance. (Press enter)\n", player.name);
             scanf("%c", &a);
             scanf("%c", &a);
+            printf("With a combination of his sword skills and knowledge of ancient spells, the knight lifted the curse that gripped the Frost Whisperer. (Press enter)\n");
+            makePause();
+            printf("In gratitude, the creature summoned a gentle snowfall that revitalized the glade, transforming it into a winter wonderland. (Press enter)\n");
+            makePause();
+            increasePlayerLevel(2);
             return;
         case 2:
             printf("\n They are dead because of YOU! (Press enter)\n");

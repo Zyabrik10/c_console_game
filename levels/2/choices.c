@@ -2,9 +2,7 @@ void print_level_2_choice_1()
 {
     // ----------------------------------------------------------------
     printf(" In the heart of the Desiers Field, the knight encountered ethereal creatures known as Mirage Drifters. (Press enter)\n");
-    char a;
-    scanf("%c", &a);
-    scanf("%c", &a);
+    makePause();
     // ----------------------------------------------------------------
     printf(" These enigmatic beings, although seemingly ephemeral, were bound by an ancient curse that distorted their true forms. (Press enter)\n");
     makePause();
@@ -41,10 +39,10 @@ void make_choice_level_2_history_1()
             makePause();
             printf(" Grateful for their newfound freedom, the ethereal beings expressed their gratitude and went back far into deep. (Press enter)\n", player.name);
             makePause();
-            increasePlayerLevel(2);
+            increasePlayerLevel(5);
             return;
         case 2:
-            printf("\n They are dead becouse of YOU! (Press enter)\n");
+            printf("\n They are dead because of YOU! (Press enter)\n");
             scanf("%c", &a);
             scanf("%c", &a);
             return;
@@ -94,10 +92,10 @@ void make_choice_level_2_history_2()
             makePause();
             printf(" As the flames roared back to life, the grateful phoenixes soared above the Desiers Field, their radiant plumage lighting up the sky. (Press enter)\n", player.name);
             makePause();
-            increasePlayerLevel(3);
+            increasePlayerLevel(5);
             return;
         case 2:
-            printf("\n They are dead becouse of YOU! (Press enter)\n");
+            printf("\n They are dead because of YOU! (Press enter)\n");
             scanf("%c", &a);
             scanf("%c", &a);
             return;
@@ -155,7 +153,7 @@ void make_choice_level_2_history_3()
             scanf("%c", &a);
             printf("\n As the sands settled, the creature's prophecies transformed from harbingers of doom to guiding lights, offering insights that would aid %s on his journey. (Press enter)\n", player.name);
             makePause();
-            increasePlayerLevel(1);
+            increasePlayerLevel(5);
             return;
         case 2:
             printf("\n They are dead because of YOU! (Press enter)\n");

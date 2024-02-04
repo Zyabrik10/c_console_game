@@ -13,14 +13,14 @@ void level_1_bossFighting()
         Enemy boss = createEnemy("The Cry Dragon", 10);
         Enemy enemies[] = {wareWolf, goblin, serpent};
 
-        bool hasWon = enconterEnemy(&boss, false);
+        bool hasWon = encounterEnemy(&boss, false);
 
         int enemiesNumber = 5;
 
         if (hasWon)
         {
             drawWon();
-            increasePlayerLevel(2);
+            increasePlayerLevel(5);
             return;
         }
 

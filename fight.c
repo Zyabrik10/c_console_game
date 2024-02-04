@@ -110,14 +110,14 @@ bool fightEnemy(Enemy *enemy)
 
     while (1)
     {
-        if (player.health <= 0)
-            break;
-
         if (enemy->health <= 0)
         {
             hasWon = true;
             break;
         }
+
+        if (player.health <= 0)
+            break;
 
         makeFightMove(enemy);
         printAllPlayerValues();
@@ -158,7 +158,7 @@ bool tryToRun(Enemy *enemy)
 {
     if ((int)rand() > 16000)
     {
-        printf("\n You did it\n");
+        printf("\n You did it. You have run. \n");
         return false;
     }
     else
@@ -186,10 +186,10 @@ bool makeEnemyChoice(Enemy *enemy)
     }
 }
 
-bool enconterEnemy(Enemy *enemy, bool hasEnhaceChance)
+bool encounterEnemy(Enemy *enemy, bool hasEnhaceChance)
 {
     printf("\n\n ***************************** ENCOUNTER *****************************\n");
-    printf("\n !!! You have just encountered %s !!!\n\n", enemy->name);
+    printf("\n !!! You have just encountered %s !!!\n", enemy->name);
     if (hasEnhaceChance)
         chanceToIncreaseEnemy(enemy);
     printAllEnemyValues(enemy);
@@ -205,7 +205,7 @@ void fighEnemies(Enemy enemies[], int enemiesVarityNumber, int enemiesEncounterN
         int randomEnemyIndex = randInt(0, enemiesVarityNumber - 1);
 
         Enemy enemy = enemies[randomEnemyIndex];
-        bool hasWon = enconterEnemy(&enemy, true);
+        bool hasWon = encounterEnemy(&enemy, true);
 
         if (!hasWon)
         {
